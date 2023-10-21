@@ -21,8 +21,8 @@ jobs:
     - name: Install PyYAML
       run: pip install pyyaml
 
-#    - name: Validate YAML
-#      run: python validate_yaml.py /c/Users/MOHAMMED ARIF/python_script_yamlvalidation/yaml_file.yaml  # Replace with the actual path to your YAML file
-    - run: |
-       echo "work space: ${{ github.workspace }}"
-       ls -lrt ${{ github.workspace }}
+    - name: Validate YAML
+      run: python validate_yaml.py
+#    - run: |
+#       echo "work space: ${{ github.workspace }}"
+#       ls -lrt ${{ github.workspace }}
