@@ -2,12 +2,13 @@ name: YAML Validation
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, reopened, closed]
     branches:
       - master  # Change this to the branch you want to monitor
 
 jobs:
-  validate:
+  if_merged:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
