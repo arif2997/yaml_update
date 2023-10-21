@@ -24,4 +24,4 @@ jobs:
     - name: Validate YAML
       run: |
         cd ${{ github.workspace }}
-        ls -lrt
+        python validate4_yaml.py
