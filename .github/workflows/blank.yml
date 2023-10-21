@@ -24,5 +24,4 @@ jobs:
 #    - name: Validate YAML
 #      run: python validate_yaml.py /c/Users/MOHAMMED ARIF/python_script_yamlvalidation/yaml_file.yaml  # Replace with the actual path to your YAML file
     - run: |
-       echo ${{ github.workspace }}
-       find / -name yaml_file.yaml -type f
+       echo "work space: ${{ github.workspace }}"
