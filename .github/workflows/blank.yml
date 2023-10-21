@@ -22,7 +22,7 @@ jobs:
       run: pip install pyyaml
 
     - name: Validate YAML
-    - run: |
+      run: |
         cd ${{ github.workspace }}
         python validate_yaml.py
 #       ls -lrt ${{ github.workspace }}
