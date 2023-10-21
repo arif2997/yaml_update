@@ -1,7 +1,8 @@
 name: YAML Validation
 
 on:
-  push:
+  pull_request:
+    types: [opened, reopened]
     branches:
       - master  # Change this to the branch you want to monitor
 
