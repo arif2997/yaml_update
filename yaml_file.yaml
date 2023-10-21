@@ -18,7 +18,7 @@ jobs:
       with:
         python-version: 3.11.3  # Choose the Python version you want to use
 
-    - name: Install PyYAML
+- name: Install PyYAML
       run: pip install pyyaml
 
     - name: Validate YAML
