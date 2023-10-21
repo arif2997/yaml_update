@@ -12,4 +12,4 @@ def validate_yaml(file_path):
         return 1
     
 
-validate_yaml("${{ github.workspace }}\yaml_file.yaml")
+validate_yaml(".\yaml_file.yaml")
