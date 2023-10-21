@@ -5,15 +5,14 @@ on:
     branches:
       - master  # Change this to the branch you want to monitor
 
-jobs:
-  validate:
+jobs:validate:
     runs-on: ubuntu-latest
 
     steps:
     - name: Check Out Code
       uses: actions/checkout@v2
 
-    - name: Setup Python
+- name: Setup Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.11.3  # Choose the Python version you want to use
